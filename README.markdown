@@ -15,11 +15,11 @@ Installation
 ------------
 
 1. Clone git repository:
-    git clone git://github.com/excelenter/sshmnt.git
+`git clone git://github.com/excelenter/sshmnt.git`
 2. Source this script somewhere in your .bashrc. Like that:
-    source ~/sshmnt/sshmnt.sh
+`source ~/sshmnt/sshmnt.sh`
 3. Or even that:
-    . ~/sshmnt/sshmnt.sh
+`. ~/sshmnt/sshmnt.sh`
 4. Now you have *sshmnt* function. Enjoy!
 
 After that
