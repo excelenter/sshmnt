@@ -18,9 +18,7 @@ Installation
 `git clone git://github.com/excelenter/sshmnt.git`
 2. Source this script somewhere in your .bashrc. Like that:
 `source ~/sshmnt/sshmnt.sh`
-3. Or even that:
-`. ~/sshmnt/sshmnt.sh`
-4. Now you have *sshmnt* function. Enjoy!
+3. Now you have *sshmnt* function. Enjoy!
 
 About
 -----
