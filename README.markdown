@@ -22,8 +22,6 @@ Installation
 `. ~/sshmnt/sshmnt.sh`
 4. Now you have *sshmnt* function. Enjoy!
 
-After that
-
 About
 -----
 
