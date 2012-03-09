@@ -1,6 +1,6 @@
 #!/bin/bash
 # sshmnt.sh
-# v. 0.2
+# v. 0.3
 #
 # Funtion that automatically mounts ssh directories into $SSHFSROOT 
 # directory.
@@ -8,7 +8,7 @@
 # $SSHFSROOT is environmental variable.
 # 
 # Optionally it can change current working directory to mounted directory.
-# ( "-d" flag )
+# ( "-nocd" flag )
 
 
 sshmnt () {
@@ -30,9 +30,9 @@ sshmnt () {
 
   # Check args
   if [ ! $1 ]; then
-    echo "${info}Usage: ${txtbld}sshmnt ${txtrst}${txtemph}user@server.com [-d]${txtrst}"
+    echo "${info}Usage: ${txtbld}sshmnt ${txtrst}${txtemph}user@server.com [-nocd]${txtrst}"
     echo "${info}Flags:"
-    echo "${info}${txtemph}-d${txtrst}: change current working directory to mounted directory."
+    echo "${info}${txtemph}-nocd${txtrst}: change current working directory to mounted directory."
     return $?
   fi
 
@@ -83,7 +83,7 @@ sshmnt () {
   fi
 
   # Change directory if "-d" flag exists
-  if [ "$2" = "-d" ]; then
+  if [ "$2" != "-nocd" ]; then
     echo "${info}Changing working directory..."
     if cd $SSHFSROOT$1
     then

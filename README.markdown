@@ -2,14 +2,14 @@ sshmnt: mount directories over SSH with ease
 ============================================
 
 What this script can do for me?
--------------------------------
-
+------------------------------- 
 This script helps you with mounting directories over SSH.
 It mounts remote directory into *$SSHFSROOT* (which is an environmental
 variable) into corresponding folder. If folder for remote directory
 doesn't exists, script will create it for you.
 
-Optionally script can change your working directory to newly mounted folder ( "-d" flag ).
+Script changes your working directory to the newly mounted folder.
+If you want to stay where you are, add "-nocd" flag to the end of the script.
 
 Installation
 ------------
